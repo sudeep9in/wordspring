@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wordspring privacy policy</title>
+<meta name="description" content="How the Wordspring reading app handles your data: no account, no ads, no tracking; documents and word lists stay on your device.">
+<style>
+  :root { --bg: #fbfaf7; --fg: #1f2328; --muted: #57606a; --line: #e3e0d8; --accent: #2f5bd3; --card: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17181a; --fg: #e8e6e1; --muted: #a3a8b0; --line: #34363b; --accent: #8fb0ff; --card: #222327; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font: 700 2rem/1.2 Georgia, "Noto Serif", serif; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 2em 0 0.4em; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); margin: 0 0 1.5em; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Wordspring privacy policy</h1>
+  <p class="meta">Effective date: 24 November 2026 · Applies to the Wordspring app for Android, iOS, Windows and the web.</p>
+
+  <div class="summary">
+    <p><strong>In short:</strong> Wordspring has no accounts, no ads, no analytics and no tracking, and the developer runs
+      no server that receives your data. Your documents, reading positions and word list stay on your device. When you look
+      up a word with <em>online extras</em> turned on, the word (and a few key words from its sentence) is sent to public
+      dictionary services to get pronunciation and more meanings. You can turn this off in Settings.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Wordspring is made by Sudeep Verma (“we”, “the developer”). Questions about this policy:
+    <a href="mailto:wordspring.app@gmail.com">wordspring.app@gmail.com</a>.</p>
+
+  <h2>What stays on your device</h2>
+  <p>The app stores the following only on your device, in the app’s private storage. We never receive it.</p>
+  <ul>
+    <li>Copies of the documents you open (PDF, EPUB, Word, web pages, text) and where you stopped reading.</li>
+    <li>Your word list: each saved word, its meaning, the sentence and document it came from, and any AI explanation you saved.</li>
+    <li>How often you looked words up, your settings, and a cache of earlier online lookups so they work offline.</li>
+    <li>AI tutor settings, including an API key if you enter one for your own AI server.</li>
+  </ul>
+  <p>The built-in dictionary works entirely on your device. Documents you open from another app (“Open with” or “Share”)
+    are copied into the app, and the temporary copy is deleted as soon as it has been read.</p>
+  <p>Your device’s own backup service (for example Google or iCloud backup) may include this app data, depending on your
+    device settings. That backup is handled by your device provider under its privacy policy, not by us.</p>
+
+  <h2>What is sent over the internet, and when</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>When</th><th>What is sent</th><th>To whom</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>You look up a word and <strong>online extras</strong> are on (the default; Settings → Use online extras)</td>
+        <td>The word or phrase you selected, its base form, and up to six key words from its sentence (used to pick the
+          meaning that fits). Not the rest of your document.</td>
+        <td><a href="https://dictionaryapi.dev">Free Dictionary API</a> (dictionaryapi.dev),
+          <a href="https://www.datamuse.com/api/">Datamuse API</a>, and
+          <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikipedia</a> (Wikimedia Foundation)
+          for names and phrases</td>
+      </tr>
+      <tr>
+        <td>You press the speaker button</td>
+        <td>A request for the word’s pronunciation recording, when one is available; otherwise your device’s own
+          text-to-speech voice is used</td>
+        <td>The site hosting the recording (listed by the Free Dictionary API)</td>
+      </tr>
+      <tr>
+        <td>You open a web page in Wordspring</td>
+        <td>A normal request for that page and its images, like a web browser</td>
+        <td>The website you chose, and the sites hosting its images</td>
+      </tr>
+      <tr>
+        <td>You use the <strong>AI tutor</strong> (off by default in the phone apps)</td>
+        <td>The words you selected, their sentence, about 600 characters of nearby text, the document’s title, the
+          dictionary meanings, and any follow-up questions you type</td>
+        <td>Only the AI server <em>you</em> set up in Settings → AI tutor. By default this is software on your own
+          computer (Ollama or LM Studio), so nothing leaves your computer.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>As with any internet request, these services can see your device’s IP address and basic technical details (such as
+    the app or browser version). We have no agreement with them and receive nothing from them; their own privacy
+    policies apply. Dictionary lookups use encrypted connections (HTTPS). Web pages and AI servers use whatever the site
+    or server you chose supports.</p>
+  <p>With online extras turned off, word lookups send nothing. Reading web pages and the AI tutor only connect when you
+    use them.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No account or sign-in, and we do not ask for your name, email or contact details.</li>
+    <li>No advertising, no analytics, no crash reporting, no tracking across apps or websites.</li>
+    <li>We do not sell or share your data, because we never receive it.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The app uses internet access for the features above. It reads a document only when you open or share it with
+    Wordspring. It does not use your location, contacts, camera, microphone or photos.</p>
+
+  <h2>Children</h2>
+  <p>Wordspring is a general reading app for students aged 13 and over and is not directed at children under 13. We do
+    not knowingly collect personal information from anyone, of any age.</p>
+
+  <h2>Your choices and deleting your data</h2>
+  <ul>
+    <li>Turn off online extras in Settings to keep every word lookup on your device.</li>
+    <li>Remove documents from your library, or words from your word list, inside the app.</li>
+    <li>Uninstalling the app, or clearing its data in your device settings, deletes everything it stored.</li>
+  </ul>
+  <p>Because we hold no data about you, there is nothing for us to access, correct or delete on our side. If you have
+    questions, contact us at the address above.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app’s handling of data changes, we will update this page and its effective date before the change takes effect.</p>
+</main>
+</body>
+</html>
